@@ -1,5 +1,7 @@
 package se.parwen.adoc.day7
 
+import se.parwen.adoc.day7.Solver.{solveStep1, solveStep2}
+
 import scala.annotation.tailrec
 
 object Solver {
@@ -54,13 +56,23 @@ object Solver {
     }
     val b2 = loop(bottom, connected)
 
-    println(b2.ontop.map(_.weightsSum))
-    println(b2.ontop(1).ontop.map(_.weightsSum))
-    println(b2.ontop(1).ontop.head.ontop.map(_.weightsSum))
-    println(b2.ontop(1).ontop.head.ontop(2).ontop.map(_.weightsSum))
-    println(b2.ontop(1).ontop.head.ontop(2).weight)
-    println(b2.ontop(1).ontop.head.ontop(2).weight - 9)
+    //println(b2.ontop.map(_.weightsSum))
+    //println(b2.ontop(1).ontop.map(_.weightsSum))
+    //println(b2.ontop(1).ontop.head.ontop.map(_.weightsSum))
+    //println(b2.ontop(1).ontop.head.ontop(2).ontop.map(_.weightsSum))
+    //println(b2.ontop(1).ontop.head.ontop(2).weight)
+    //println(b2.ontop(1).ontop.head.ontop(2).weight - 9)
 
     b2.ontop(1).ontop.head.ontop(2).weight - 9
+  }
+}
+
+trait Solver7 {
+  def solve7(): Unit = {
+    println("Day 7:")
+    val result1 = solveStep1(Input.input)
+    println(s"step 1 result is $result1")
+    val result2 = solveStep2(Input.input)
+    println(s"step 2 result is $result2")
   }
 }

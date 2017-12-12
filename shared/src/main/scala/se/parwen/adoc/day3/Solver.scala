@@ -47,3 +47,14 @@ object Solver {
     loop(Map{Pos(0,0) -> 1}, Pos(0,0), 1, moves)
   }
 }
+
+trait Solver3 {
+
+  def solve3(): Unit = {
+    println("Day 3:")
+    val result1 = Solver.solveStep1(289326)
+    println(s"step 1 result is $result1")
+    val result2 = Solver.solveStep2(289326)
+    println(s"step 2 result is $result2")
+  }
+}

@@ -10,15 +10,9 @@ import se.parwen.adoc.day7.Solver7
 import se.parwen.adoc.day8.Solver8
 import se.parwen.adoc.day9.Solver9
 
-import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
+object AdocJVM extends Solver3 with Solver4 with Solver5 with Solver6 with Solver7 with Solver8 with Solver9 with Solver10 with Solver11 {
 
-object AdocJS extends Solver3 with Solver4 with Solver5 with Solver6 with Solver7 with Solver8 with Solver9 with Solver10 with Solver11 {
-
-  @JSExportTopLevel("se.parwen.adoc.AdocJS")
-  protected def getInstance(): this.type = this
-
-  @JSExport
-  def main(): Unit = {
+  def main(args: Array[String]): Unit = {
     solve3()
     solve4()
     solve5()

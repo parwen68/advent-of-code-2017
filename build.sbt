@@ -25,7 +25,7 @@ lazy val adoc = crossProject.in(file(".")).
 
   ).
   jsSettings(
-    scalaJSUseMainModuleInitializer := true
+    //scalaJSUseMainModuleInitializer := true
   )
 
 lazy val adocJVM = adoc.jvm

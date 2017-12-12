@@ -55,3 +55,14 @@ object Solver {
     loop(list, 0, 0, 64).grouped(16).map(l => l.fold(0)(_ ^ _)).map(v => f"$v%02x").mkString
   }
 }
+
+trait Solver10 {
+  def solve10(): Unit = {
+    println("Day 10:")
+    val result1 = Solver.solveStep1((0 to 255).toList, Input.input)
+    println(s"step 1 result is $result1")
+    val result2 = Solver.solveStep2(Input.inputAsStr)
+    println(s"step 2 result is $result2")
+
+  }
+}

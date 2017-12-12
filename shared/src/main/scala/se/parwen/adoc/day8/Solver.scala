@@ -59,5 +59,14 @@ object Solver {
     }
     loop(exps)._2
   }
+}
 
+trait Solver8 {
+  def solve8(): Unit = {
+    println("Day 8:")
+    val result1 = Solver.solveStep1(Input.input)
+    println(s"step 1 result is $result1")
+    val result2 = Solver.solveStep2(Input.input)
+    println(s"step 2 result is $result2")
+  }
 }

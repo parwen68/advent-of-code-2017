@@ -33,3 +33,13 @@ object Solver {
     input.split('\n').filter(s => !s.isEmpty).map(pp => (pp, isValid(pp))).count(p => p._2)
   }
 }
+
+trait Solver4 {
+  def solve4(): Unit = {
+    println("Day 4:")
+    val result1 = Solver.solveStep1(Input.input)
+    println(s"step 1 result is $result1")
+    val result2 = Solver.solveStep2(Input.input)
+    println(s"step 2 result is $result2")
+  }
+}

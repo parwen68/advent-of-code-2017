@@ -79,3 +79,13 @@ object Solver {
     (1 to len).map(list.take(_)).foldLeft(0)((acc,v) => Math.max(acc,solve(v).map(_._2).sum))
   }
 }
+
+trait Solver11 {
+  def solve11(): Unit = {
+    println("Day 11:")
+    val result1 = Solver.solveStep1(Input.input)
+    println(s"step 1 result is $result1")
+    val result2 = Solver.solveStep2(Input.input)
+    println(s"step 2 result is $result2")
+  }
+}

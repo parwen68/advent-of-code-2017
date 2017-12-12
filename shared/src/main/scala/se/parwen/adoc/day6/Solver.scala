@@ -42,3 +42,13 @@ object Solver {
     loop(List(input), input)
   }
 }
+
+trait Solver6 {
+  def solve6() {
+    println("Day 6:")
+    val result1 = Solver.solveStep1(List(0,5,10,0,11,14,13,4,11,8,8,7,1,4,12,11))
+    println(s"step 1 result is $result1")
+    val result2 = Solver.solveStep2(List(0,5,10,0,11,14,13,4,11,8,8,7,1,4,12,11))
+    println(s"step 2 result is $result2")
+  }
+}
