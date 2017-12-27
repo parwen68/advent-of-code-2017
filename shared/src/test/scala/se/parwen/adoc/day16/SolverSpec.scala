@@ -1,6 +1,6 @@
 package se.parwen.adoc.day16
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest._
 import se.parwen.adoc.day16.Solver.{Exchange, Partner, Spin}
 
 class SolverSpec extends FlatSpec with Matchers {

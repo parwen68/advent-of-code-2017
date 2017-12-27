@@ -5,6 +5,10 @@ import se.parwen.adoc.day11.Solver11
 import se.parwen.adoc.day12.Solver12
 import se.parwen.adoc.day13.Solver13
 import se.parwen.adoc.day14.Solver14
+import se.parwen.adoc.day15.Solver15
+import se.parwen.adoc.day16.Solver16
+import se.parwen.adoc.day17.Solver17
+import se.parwen.adoc.day18.Solver18
 import se.parwen.adoc.day3.Solver3
 import se.parwen.adoc.day4.Solver4
 import se.parwen.adoc.day5.Solver5
@@ -18,7 +22,7 @@ import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 object AdocJS extends Solver3
   with Solver4 with Solver5 with Solver6 with Solver7 with Solver8
   with Solver9 with Solver10 with Solver11 with Solver12 with Solver13
-  with Solver14 {
+  with Solver14 with Solver15 with Solver16 with Solver17 with Solver18 {
 
   @JSExportTopLevel("se.parwen.adoc.AdocJS")
   protected def getInstance(): this.type = this
@@ -37,5 +41,9 @@ object AdocJS extends Solver3
     solve12()
     solve13()
     solve14()
+    solve15()
+    solve16()
+    solve17()
+    solve18()
   }
 }
