@@ -137,7 +137,6 @@ object Solver {
 
   def solveStep2(input: String): Long = {
     val prgm = parse(input)
-    println(prgm)
 
     def stopped(ctx: ExecCtx) = ctx.stopped || ctx.ptr < 0 || ctx.ptr >= prgm.length
 

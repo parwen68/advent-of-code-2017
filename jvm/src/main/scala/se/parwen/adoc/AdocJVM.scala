@@ -9,6 +9,8 @@ import se.parwen.adoc.day15.Solver15
 import se.parwen.adoc.day16.Solver16
 import se.parwen.adoc.day17.Solver17
 import se.parwen.adoc.day18.Solver18
+import se.parwen.adoc.day19.Solver19
+import se.parwen.adoc.day20.Solver20
 import se.parwen.adoc.day3.Solver3
 import se.parwen.adoc.day4.Solver4
 import se.parwen.adoc.day5.Solver5
@@ -20,7 +22,7 @@ import se.parwen.adoc.day9.Solver9
 object AdocJVM extends Solver3 with Solver4 with Solver5 with Solver6
   with Solver7 with Solver8 with Solver9 with Solver10 with Solver11
   with Solver12 with Solver13 with Solver14 with Solver15 with Solver16
-  with Solver17 with Solver18 {
+  with Solver17 with Solver18 with Solver19 with Solver20 {
 
   def main(args: Array[String]): Unit = {
     solve3()
@@ -39,5 +41,7 @@ object AdocJVM extends Solver3 with Solver4 with Solver5 with Solver6
     solve16()
     solve17()
     solve18()
+    solve19()
+    solve20()
   }
 }

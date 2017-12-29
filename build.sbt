@@ -22,7 +22,7 @@ lazy val adoc = crossProject.in(file(".")).
     }
   ).
   jvmSettings(
-    mainClass in Compile := Some("se.parwen.adoc.day13.Main")
+    // mainClass in Compile := Some("se.parwen.adoc.day13.Main")
   ).
   jsSettings(
     //scalaJSUseMainModuleInitializer := true
